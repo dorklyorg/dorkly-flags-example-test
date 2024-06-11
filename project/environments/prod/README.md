@@ -13,6 +13,7 @@ You'll need 2 strings:
 
 - <details>
   <summary>Example: Configuring a server-side SDK</summary>
+
   Check out the LaunchDarkly [hello-go example](https://github.com/launchdarkly/hello-go) and modify the config as follows:
 
   ```golang
@@ -26,7 +27,9 @@ You'll need 2 strings:
 
 - <details>
   <summary>Example: Configuring a client-side SDK</summary>
+
   Check out the LaunchDarkly [hello-js example](https://github.com/launchdarkly/hello-js) and modify the config as follows:
+
   ```javascript
         // Set clientSideID to your environment name
         const clientSideID = 'prod';
@@ -39,8 +42,8 @@ You'll need 2 strings:
 
         const options = {
           baseUrl: 'https://dorkly-example-test.mbe39aim2pgh2.us-west-2.cs.amazonlightsail.com/'
-          streamUrl: 'https://dorkly-example-test.mbe39aim2pgh2.us-west-2.cs.amazonlightsail.com/',
-          sendEvents: false, };
+          streamUrl: 'https://dorkly-example-test.mbe39aim2pgh2.us-west-2.cs.amazonlightsail.com/'
+        };
 
         const ldclient = LDClient.initialize(clientSideID, context, options);
   ```
