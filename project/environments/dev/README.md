@@ -5,19 +5,26 @@
 Development environment
 
 ## Quick Start
-### Configuring a backend SDK
+### Configuring SDKs
+We defer to the [LaunchDarkly Relay Proxy Documentation](https://docs.launchdarkly.com/sdk/features/relay-proxy-configuration/proxy-mode) for configuring SDKs.
+You'll need 2 strings:
+1. Relay Proxy endpoint is: `https://dorkly-example-test.mbe39aim2pgh2.us-west-2.cs.amazonlightsail.com/`
+2. For server-side SDKs: SDK Key: `sdk-dev-cv0XMIgbwOceSRjg` or for client-side SDKs: client-side id: `dev`
+
+<details>
+  <summary>Example: Configuring a server-side SDK</summary>
 Check out the LaunchDarkly [hello-go example](https://github.com/launchdarkly/hello-go) and modify the config as follows:
 
 ```golang
     dorklyConfig := ld.Config{
 		ServiceEndpoints: ldcomponents.RelayProxyEndpoints("https://dorkly-example-test.mbe39aim2pgh2.us-west-2.cs.amazonlightsail.com/"),
-		Events:           ldcomponents.NoEvents(),
 	}
 
 	ldClient, err := ld.MakeCustomClient("sdk-dev-cv0XMIgbwOceSRjg", dorklyConfig, 10*time.Second)
 ```
-
-### Configuring a frontend SDK
+</details>
+<details>
+  <summary>Example: Configuring a client-side SDK</summary>
 Check out the LaunchDarkly [hello-js example](https://github.com/launchdarkly/hello-js) and modify the config as follows:
 ```javascript
       // Set clientSideID to your environment name
@@ -36,6 +43,7 @@ Check out the LaunchDarkly [hello-js example](https://github.com/launchdarkly/he
 
       const ldclient = LDClient.initialize(clientSideID, context, options);
 ```
+</details>
 
 ## Other handy bits
 All values below and others are available as terraform outputs for easy wiring into your app.
