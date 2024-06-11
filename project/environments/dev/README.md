@@ -43,6 +43,7 @@ You'll need 2 strings:
         const options = {
           baseUrl: 'https://dorkly-example-test.mbe39aim2pgh2.us-west-2.cs.amazonlightsail.com/',
           streamUrl: 'https://dorkly-example-test.mbe39aim2pgh2.us-west-2.cs.amazonlightsail.com/',
+          eventsUrl: 'https://dorkly-example-test.mbe39aim2pgh2.us-west-2.cs.amazonlightsail.com/',
         };
 
         const ldclient = LDClient.initialize(clientSideID, context, options);
