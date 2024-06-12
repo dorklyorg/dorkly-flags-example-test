@@ -1,4 +1,4 @@
-# Dorkly Flags for project: example-test
+# Dorkly Flags for project: `example-test`
 > [!WARNING]
 > This file is managed by terraform. Do not edit manually.
 
