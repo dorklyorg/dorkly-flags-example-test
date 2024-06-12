@@ -1,5 +1,11 @@
 # Dorkly Flags for project: example-test
-### This file is managed by terraform. Do not edit manually.
+> [!WARNING]
+> This file is managed by terraform. Do not edit manually.
+
+## `example-test` project description
+
+> Project for manual testing of all dorkly components.
+
 [Documentation](https://github.com/dorklyorg)
 
 Dorkly endpoint for this environment: `https://dorkly-example-test.mbe39aim2pgh2.us-west-2.cs.amazonlightsail.com/`
