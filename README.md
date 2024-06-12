@@ -6,7 +6,9 @@
 
 > Project for manual testing of all dorkly components.
 
-[Documentation](https://github.com/dorklyorg)
+
+[Documentation](https://github.com/dorklyorg/dorkly/wiki)
+
 
 Dorkly endpoint for this environment: `https://dorkly-example-test.mbe39aim2pgh2.us-west-2.cs.amazonlightsail.com/`
 
