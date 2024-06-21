@@ -3,4 +3,4 @@
 # It's possible to specify percentages for either true or false, or both.
 #  The sum of the percentages must equal 100 and one must be non-zero.
 percentRollout:
-  true: 32.0
+  true: 50.0
